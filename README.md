@@ -6,11 +6,11 @@ Operating System = LINUX OR WINDOWS OR MAC OS
 # AWS is hosting our Linux Servers =
 
 =================================================
-shh-client = ssh = secure shell = 22 =
+ssh-client = ssh = secure shell = 22 =
 ports ---> 0 - 65535
 SECURED CONNECTION
 
-    Backend  +
+    Backend  +      
         Linux OS
         SERVERS
     FRONTEND
@@ -63,15 +63,15 @@ Other Operating Systems
 Windows = c/ = root or admin directory
     PowerShell or Command prompt
 
-PublicIP = 35.173.304.60  || HOSTName
-ssh-key lapwork           || password
+PublicIP = 35.173.304.60  || HOSTName 
+ssh-key labwork.pem           || password
 user ec2-user             || ubuntu
 
 Trusted Secured Conncetion
    ssh -i chmod 400 sshkeyName.pem
 
 ssh -i sshkeyName.pem ec2-user@IPAdress
-shh  -i sshkeyNme.pem ec2-user@35.173.304.60
+shh  -i labwork.pem.pem ec2-user@35.173.304.60
 
               LINUX FILE STRUCTURE
                  /   = ROOT directory
@@ -175,7 +175,7 @@ Here's a breakdown of the options used:
 
 
 Linux is case sensitive =
-   test / Tes / TEST are different files in linux
+   test / Test / TEST are different files in linux
 
 yum install tree
 sudo yum install tree
@@ -233,11 +233,21 @@ home:
 
 Copy and paste from one dir to another
 ================================
-    cp -R ~/"photo dir" /backups  copy from photo dir to backup dir
+    cp -R ~/"photo_dir" /backups  copy from photo dir to backup dir
+
+cp -R ~/"photo" /backups
 
 
 
 
+                      Lecture 4  Assignment 
+Create an ec2 instance in AWS. SSH into the ec2 instance, please use the free tier instance(Amazon t2micro ) (send a screenshot if you successfully connect to the instance)
+Enter as a superuser into the ec2Instance
+Display the memory, disk and cpu information (send screenshot to the group)
+Create a folder call DevOps-Master, inside DevOps-Master create a folder call SDLC, inside SDLC create a folder call Docker, insider Docker create a folder call Jenkins, inside Jenkins, create a folder call GitHub, inside GitHub create a folder call Git inside git create a folder call Gradle, inside Gradle create a folder call Docker-Hub
+Create another folder in Git name the folder Nexus , in the Nexus folder create a file name mybook.txt,
+Go back to your root directory install tree using this command `yum install tree
+`run the command  `tree`, make a screenshot and send.
 
 
 
