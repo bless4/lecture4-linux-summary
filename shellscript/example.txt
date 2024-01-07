@@ -1,0 +1,1 @@
+Verbose refers to the quality of being wordy or using more words than necessary to express an idea or convey information. In technology, computing, programming, and communications, verbosity can refer to excessive or unnecessary use of words in code, documentation, or communication.
