@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify your EC2 instance ID
-instance_id="YOUR_INSTANCE_ID"
+instance_id="i-0691859e40f5e90db"
 
 # Stop the instance after 5 minutes
 echo "Stopping the EC2 instance in 5 minutes..."
