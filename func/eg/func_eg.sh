@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # Function to greet a user
-greet_user() {
+ greet_user() {
     echo "Hello, $1!"
 }
 
 # Function to add two numbers
-add_numbers() {
+ add_numbers() {
     local sum=$(( $1 + $2 ))  # Local variable 'sum'
     echo "Sum: $sum"
 }
 
 # Function to check if a number is even or odd
-check_even_odd() {
+ check_even_odd() {
     if (( $1 % 2 == 0 )); then
         echo "$1 is even."
     else
