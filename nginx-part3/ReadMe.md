@@ -1,4 +1,4 @@
-or Nginx load balancing, you typically need to edit the configuration files related to the specific site or application that you want to balance across multiple servers. The main configuration file (nginx.conf) and the sites-available directory are key places to make these edits. Here are the relevant files and directories:
+For Nginx load balancing, you typically need to edit the configuration files related to the specific site or application that you want to balance across multiple servers. The main configuration file (nginx.conf) and the sites-available directory are key places to make these edits. Here are the relevant files and directories:
 
 nginx.conf:
 

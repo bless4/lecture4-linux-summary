@@ -65,3 +65,6 @@ sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
 # Finally, restart or reload Nginx for the changes to take effect:
 
 sudo systemctl reload nginx
+
+# nginx html dir
+/usr/share/nginx/html/
