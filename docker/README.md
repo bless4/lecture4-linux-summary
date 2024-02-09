@@ -70,7 +70,7 @@ Save the changes in app/views/todos.ejs.
 View your application at http://localhost:3000 to see the changes in real-time.
 
 # Step 6: Delete everything and start over
-
+# Project 2
 # Persist container data
 Docker isolates all content, code, and data in a container from your local filesystem. When you delete a container, Docker deletes all the content within that container.
 ![alt text](image-1.png)
@@ -103,7 +103,62 @@ The top-level volumes element defines and configures a volume named database tha
  `cd /path/to/multi-container-app/`
  `docker compose up -d`
 
+open ` http://localhost:3000`
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Access a local folder from a container
+
+Docker isolates all content, code, and data in a container from your local filesystem. <br>
+By default, containers can't access directories in your local filesystem. <br>
+
+![alt text](image-3.png)
+
+# Step 1: Get the sample application
+
+`git clone https://github.com/docker/bindmount-apps`
+
+---->Add a bind mount to access data on your system from a container. 
+---->A bind mount lets you share a directory from your host's filesystem into the container.
+----> open ` the compose.yaml`
+
+----> uncomment the following lines.
+
+```
+todo-app:
+    # ...
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/app/node_modules
+```
+
+# Take Note
+The volumes element tells Compose to mount the local folder ./app to /usr/src/app in the container for the todo-app service. This particular bind mount overwrites the static contents of the /usr/src/app directory in the container and creates what is known as a development container. The second instruction, /usr/src/app/node_modules, prevents the bind mount from overwriting the container's node_modules directory to preserve the packages installed in the container. <br>
+
+
+# Step 3: Run the application
+---> cd /path/to/bindmount-apps/
+---> docker compose up -d
+---> ` http://localhost:3000`
+
+# Containerize your application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 To be continue `https://docs.docker.com/guides/walkthroughs/access-local-folder/`
 # Third Project.
 # Deploying a Java application using docker.
+
 
