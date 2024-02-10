@@ -13,7 +13,7 @@ For Mac, and Linux use the Terminal
 
 # cd /path/to/welcome-to-docker/
 
-# To build the container 'docker build -t welcome-to-docker .'
+# To build the container 'docker build -t welcome-to-docker .'  # To build an image
 
 # docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker   #To run the container
 
@@ -57,7 +57,9 @@ view the Compose.yaml file using your code editor in our case pls open it with V
 
 # Step 3 Run the application
 cd /path/to/multi-container-app/
+
     docker compose up -d
+
     In the previous command, the -d flag tells Docker Compose to run in detached mode. <br>
   
 # step 4, Open app/views/todos.ejs in a text or code editor, then change the text on line 18
@@ -140,10 +142,21 @@ The volumes element tells Compose to mount the local folder ./app to /usr/src/ap
 ---> docker compose up -d
 ---> ` http://localhost:3000`
 
+### Project 4
+
 # Containerize your application
 
 
+When working with containers, you typically need to create a Dockerfile to define your image and a compose.yaml file to define how to run it. <br>
 
+To help you create these files, Docker Desktop has the `docker init` command. Run this command in a terminal within your project folder. `docker init` creates all the required files to containerize your application. <br>
+
+---> `cd /path/to/your/project/`
+---> `docker compose up`
+
+The docker init command tries its best to do the heavy lifting for you, but sometimes there's some assembly require.
+
+# Step 4: Update the Docker assets
 
 
 
