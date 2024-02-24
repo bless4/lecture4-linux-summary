@@ -231,3 +231,5 @@ You might create your own images or you might only use those created by others a
 
 # More Info
 https://github.com/iam-veeramalla/Docker-Zero-to-Hero
+
+https://www.youtube.com/watch?v=3F1ZOkqK7Ww&t=2505s
